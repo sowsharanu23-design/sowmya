@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Sowmya G</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .skill-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .skill-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .languages {
+            margin-top: 3rem;
+        }
+        .lang-list {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .lang-item {
+            background: var(--accent-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .about-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">SOWMYA G.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="photo.jpg" alt="Sowmya G" style="border-radius: 20px; box-shadow: var(--shadow);">
+                </div>
+                <div class="about-text">
+                    <h3>Aspiring Tech Professional</h3>
+                    <p>I am a dedicated student pursuing my Bachelor of Science in Mathematics and Computer Science. My passion lies in exploring the vast possibilities of Artificial Intelligence and Software Development. I thrive on solving complex problems and am always eager to learn new technologies that can contribute to impactful and innovative solutions.</p>
+                    
+                    <div class="languages">
+                        <h4>Languages Known</h4>
+                        <div class="lang-list">
+                            <span class="lang-item">English</span>
+                            <span class="lang-item">Kannada</span>
+                            <span class="lang-item">Hindi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <p>C / C++</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-globe"></i>
+                    <p>Web Tech</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <p>DBMS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <p>Machine Learning</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="mailto:sowmyasharanu23@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+917337623179"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2026 Sowmya G. All rights reserved.</p>
+    </footer>
+
+    <script src="shared.js"></script>
+</body>
+</html>
